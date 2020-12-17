@@ -61,7 +61,7 @@ const App = () => {
            <form className="search-form" onSubmit={onSubmit}>
              {alert !== "" && <Alert alert={alert}/>}
              <input type="text" placeholder="Wakanda Food U Lookin' For?" autoComplete="off" onChange={onChange} value={query}/>
-             <input type="submit" value="Low-Fat Only"/>
+             <input type="submit" value="High Protein Only"/>
            </form>
          </div>
          <div className="recipes">
