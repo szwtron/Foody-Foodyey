@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import step3 from './step1.png';
 import step2 from './step2.png';
 import step1 from './step3.png';
+import step4 from './step4.png';
 
 export default function Home(){
     return (
@@ -32,16 +33,27 @@ export default function Home(){
                     </div>
                 </div>
 
-                <div class="card card-image2" style= {{ marginTop: "360px" }}>
+                <div class="card card-image2" style= {{ marginTop: "180px" }}>
                     <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" style= {{justifyContent: "center", textAlign: "center"}}>
                         <div>
                             <h6 class="purple-text"><i class="fas fa-plane" style= {{fontSize: "26px"}} ></i><strong style={{color:"Black"}}> Search NOW! </strong></h6>
-                            <h3 class="card-title py-3 font-weight-bold" style= {{fontSize: "24px", color: "Black"}}><strong>Find Low fat diet, High diet food</strong></h3>
+                            <h3 class="card-title py-3 font-weight-bold" style= {{fontSize: "24px", color: "Black"}}><strong>Find Low diet, Balanced, or High diet food</strong></h3>
                             <p class="pb-3" style= {{fontSize: "24px", color: "Black" }}>Anything you want!</p>
                             <a href="./Balanced" class="buttonSearch"><i class="far fa-clone left"></i>  Balanced Food </a>
                             <a href="./HighProtein" class="buttonSearch"><i class="far fa-clone left"></i>  High-Protein Food </a>
                             <a href="./Lowfat" class="buttonSearch"><i class="far fa-clone left"></i>  Low-Fat Food </a>
                             <a href="./Lowcarb" class="buttonSearch"><i class="far fa-clone left"></i>  Low-Carb Food </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-image3" style= {{ marginTop: "180px" }}>
+                    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4" style= {{justifyContent: "center", textAlign: "center"}}>
+                        <div>
+                            <h6 class="purple-text"><i class="fas fa-plane" style= {{fontSize: "26px"}} ></i><strong> Analysis! </strong></h6>
+                            <h3 class="card-title py-3 font-weight-bold" style= {{fontSize: "24px"}}><strong>Find out more about your favourite food</strong></h3>
+                            <p class="pb-3" style= {{fontSize: "24px", color:"white"}}>Know what you eat!</p>
+                            <a href="./Nutrition" class="buttonSearch"><i class="far fa-clone left"></i> Nutrition Analysis </a>
                         </div>
                     </div>
                 </div>
@@ -95,6 +107,16 @@ export default function Home(){
                     </h3>
                     <p className="paragraph color--gray--light">
                       Found something interesting? SAVE IT!
+                    </p>
+                  </div>
+
+                  <div className="home__card">
+                    <img alt="Turkey lunch" className="home__image" src={step4} style={{width:"85px", height:"90px"}}/>
+                    <h3 className="heading heading--level3 home__title">
+                      Wonder what substance that your food contains?
+                    </h3>
+                    <p className="paragraph color--gray--light">
+                      Analysis the nutrition on your food!
                     </p>
                   </div>
 
