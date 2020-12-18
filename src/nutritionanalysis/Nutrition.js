@@ -51,7 +51,7 @@ const Nutrition = () => {
 
   if(testingconsole.length > 0)  {
     var testingconsole2 = Object.values(nutritions.ingredients[0]);
-    if(nutritions.cautions === ""){
+    if(nutritions.cautions.length == 0){
       nutritions.cautions = "NONE";
     }
     //console.log(testingconsole2);
