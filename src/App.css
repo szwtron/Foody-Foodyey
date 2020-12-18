@@ -12,6 +12,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body{
@@ -68,7 +69,7 @@ html {
   padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
-  margin-top:5px;
+  margin-top:10px;
   color:white;
   display: block;
   text-align: center;
@@ -96,6 +97,12 @@ html {
   width: 80%;
   margin-top: 200px;
   margin-left: 250px;
+  text-shadow: 0 0 12px rgba(114,71,21,0.68), 0 0 10px rgba(114,71,21,0.68);
+}
+
+.recipe {
+  color:black;
+  text-shadow: 0 0 0px rgba(114,71,21,0.68), 0 0 0px rgba(114,71,21,0.68);
 }
 
 /* App */
@@ -154,6 +161,22 @@ h1 {
   color:white;
   text-transform: uppercase;
   margin: 1rem 0;
+}
+
+/* Nutrients */
+
+.Nutritions {
+  width:50%;
+  color: white;
+  font-size: large;
+}
+
+.Nutritions h1,h2,h3, th, tr{
+  text-shadow: 0 0 12px rgba(114,71,21,0.68), 0 0 10px rgba(114,71,21,0.68);
+}
+
+.KCal {
+  display:inline-block;
 }
 
 .search-form {
@@ -507,7 +530,7 @@ footer {
 }
 
 .headparagraph{
-  margin-top: 500px;
+  margin-top: 300px;
   margin-left: auto;
   margin-right: auto;
   @media (--mq__tabletCustom--min) {
@@ -575,27 +598,37 @@ a:hover {
 }
 
 .card-image{
-  background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20200526/2020052612372361982.jpg);
+  background-image: url(../src/assets/card-image.jpg);
   background-size: 1920px 360px;
   transition: transform 0.4s 0s ease-out;
 }
 
 .card-image2{
-  background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20200211/2020021114275255981.jpg);
+  background-image: url(../src/assets/card-image2.jpg);
   background-size: 1920px 360px;
   transition: transform 0.4s 0s ease-out;
 }
 
 .card-image2:hover{
-  background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20200211/2020021114275255981.jpg);
+  background-image: url(../src/assets/card-image2.jpg);
   transform: scale(1.02);
-
 }
 
 .card-image:hover{
-  background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20200526/2020052612372361982.jpg);
+  background-image: url(../src/assets/card-image.jpg);
   transform: scale(1.02);
+}
 
+.card-image3{
+  background-image: url(../src/assets/card-image3.jpg);
+  background-size: 1920px 360px;
+  object-fit: cover;
+  transition: transform 0.4s 0s ease-out;
+}
+
+.card-image3:hover{
+  background-image: url(../src/assets/card-image3.jpg);
+  transform: scale(1.02);
 }
 
 
@@ -606,7 +639,9 @@ a:hover {
   text-shadow: 0 0 12px rgba(114,71,21,0.68), 0 0 10px rgba(114,71,21,0.68);
   margin: 32px auto 27px;
 }
-
+.card-image3,pb-3 {
+  text-shadow: 0 0 12px rgba(114,71,21,0.68), 0 0 10px rgba(114,71,21,0.68);
+}
 
 .heading--level1 {
   font-size: 5rem !important;
