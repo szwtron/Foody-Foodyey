@@ -10,6 +10,7 @@ import Balanced from "../Filterapp/Balanced"
 import About from "./aboutus/About"
 import Bookmarkrecipe from "./SavedRecipes/Bookmarkrecipe"
 import Home from "./home/Home"
+import Nutrition from "../nutritionanalysis/Nutrition"
 
 
 const Router = () => (
@@ -21,8 +22,9 @@ const Router = () => (
             <Route path="/Lowfat" component={Lowfat} exact/>
             <Route path="/HighProtein" component={HighProtein} exact/>
             <Route path="/Lowcarb" component={Lowcarb} exact/>
-            <Route path="/About" component={About} exact/>
             <Route path="/Bookmarkrecipe" component={Bookmarkrecipe} exact/>
+            <Route path="/Nutrition" component={Nutrition} exact/>
+            <Route path="/About" component={About} exact/>
         </Switch>
     </BrowserRouter>
 );
